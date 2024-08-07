@@ -186,4 +186,7 @@ curl -X PUT http://127.0.0.1:5000/update_student/1 -H "Content-Type: application
 curl -X GET "http://127.0.0.1:5000/list_students?limit=100"
 ```
 
-**Populate Database*
+**Populate Database**
+```
+curl -X POST -H "Content-Type: application/json" -d '{"num_records": 1000}' http://127.0.0.1:5000/populate_students
+```
